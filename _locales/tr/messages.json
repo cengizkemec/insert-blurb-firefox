@@ -1,0 +1,253 @@
+{
+  "extensionName": {
+    "message": "Insert Blurb (Firefox)",
+    "description": "Eklenti adı."
+  },
+  "extensionDescription": {
+    "message": "Önceden yazdığınız metinleri sağ tık menüsünden herhangi bir metin kutusuna tek tıkla ekleyin. Tüm metinler tarayıcınızda kalır.",
+    "description": "Eklenti açıklaması."
+  },
+  "menuRoot": {
+    "message": "Blurb ekle"
+  },
+  "menuEmpty": {
+    "message": "Henüz blurb eklenmedi"
+  },
+  "menuManage": {
+    "message": "Blurb'ları yönet…"
+  },
+  "notifyTitle": {
+    "message": "Insert Blurb"
+  },
+  "errorNoTarget": {
+    "message": "Önce bir metin kutusuna tıklayın, sonra sağ tık menüsünden tekrar deneyin."
+  },
+  "errorMaxLength": {
+    "message": "Metin kutusu dolu ya da karakter sınırına ulaşmış."
+  },
+  "errorFailed": {
+    "message": "Metin bu sayfaya eklenemedi. Sayfayı yenileyip yeniden deneyin."
+  },
+  "optionsTitle": {
+    "message": "Insert Blurb — Blurb Yönetimi"
+  },
+  "eyebrow": {
+    "message": "Firefox eklentisi"
+  },
+  "heroSub": {
+    "message": "Sık kullandığınız metinleri kaydedin, sağ tık menüsünden tek tıkla herhangi bir metin kutusuna ekleyin."
+  },
+  "heroBadge": {
+    "message": "Yerel depolama · Sunucuya gönderilmez"
+  },
+  "newTitle": {
+    "message": "Yeni blurb"
+  },
+  "newSubtitle": {
+    "message": "Kısa bir etiket ve eklenecek metni yazın."
+  },
+  "labelField": {
+    "message": "Etiket"
+  },
+  "optionalLabel": {
+    "message": "(isteğe bağlı)"
+  },
+  "labelPlaceholder": {
+    "message": "Örn. E-posta adresim"
+  },
+  "textField": {
+    "message": "Metin"
+  },
+  "textPlaceholder": {
+    "message": "Sağ tık menüsünden eklenecek metin…"
+  },
+  "addButton": {
+    "message": "Blurb ekle"
+  },
+  "clearButton": {
+    "message": "Temizle"
+  },
+  "newHint": {
+    "message": "Etiket boş bırakılırsa menüde metnin ilk satırı görünür."
+  },
+  "listTitle": {
+    "message": "Blurb'larınız"
+  },
+  "blurbCountOne": {
+    "message": "1 blurb"
+  },
+  "blurbCountOther": {
+    "message": "$1 blurb"
+  },
+  "importButton": {
+    "message": "İçe aktar"
+  },
+  "exportJsonButton": {
+    "message": "Yedek indir"
+  },
+  "exportTxtButton": {
+    "message": "TXT indir"
+  },
+  "exportJsonTitle": {
+    "message": "Etiketleriyle birlikte tam yedek"
+  },
+  "exportTxtTitle": {
+    "message": "Her blurb tek satır olarak indirilir"
+  },
+  "emptyTitle": {
+    "message": "Henüz blurb yok"
+  },
+  "emptyText": {
+    "message": "İlk metninizi ekleyin; sağ tık menüsünde anında görünsün."
+  },
+  "emptyCreate": {
+    "message": "İlk blurb'ı oluştur"
+  },
+  "loadSamples": {
+    "message": "Örnekleri yükle"
+  },
+  "dangerText": {
+    "message": "Tüm blurbları kalıcı olarak silin."
+  },
+  "clearAllButton": {
+    "message": "Tümünü sil"
+  },
+  "helpTitle": {
+    "message": "Nasıl kullanılır?"
+  },
+  "helpStep1": {
+    "message": "Metninizi yukarıdan kaydedin."
+  },
+  "helpStep2": {
+    "message": "Herhangi bir sayfada bir metin kutusuna sağ tıklayın."
+  },
+  "helpStep3": {
+    "message": "“Blurb ekle” menüsünden metni seçin."
+  },
+  "helpNote": {
+    "message": "Not: Bazı siteler kendi özel editörlerini kullandığı için (ör. Facebook, Google Docs) ekleme çalışmayabilir. Sayfayı yenileyip yeniden deneyebilirsiniz."
+  },
+  "footerLeft": {
+    "message": "Insert Blurb · Firefox uyarlaması"
+  },
+  "footerRight": {
+    "message": "Veriler yalnızca bu tarayıcıda saklanır."
+  },
+  "dialogTitle": {
+    "message": "Blurb'ı düzenle"
+  },
+  "closeAria": {
+    "message": "Kapat"
+  },
+  "saveButton": {
+    "message": "Kaydet"
+  },
+  "cancelButton": {
+    "message": "Vazgeç"
+  },
+  "editButton": {
+    "message": "Düzenle"
+  },
+  "deleteButton": {
+    "message": "Sil"
+  },
+  "confirmDeleteButton": {
+    "message": "Emin misiniz?"
+  },
+  "confirmClearAll": {
+    "message": "Emin misiniz?"
+  },
+  "moveUpTitle": {
+    "message": "Yukarı taşı"
+  },
+  "moveDownTitle": {
+    "message": "Aşağı taşı"
+  },
+  "unlabeled": {
+    "message": "Etiketsiz"
+  },
+  "noLabelTitle": {
+    "message": "Etiket yok"
+  },
+  "characters": {
+    "message": "$1 karakter"
+  },
+  "charCountTitle": {
+    "message": "Karakter sayısı"
+  },
+  "genericBlurb": {
+    "message": "Blurb"
+  },
+  "toastAdded": {
+    "message": "Blurb eklendi."
+  },
+  "toastUpdated": {
+    "message": "Blurb güncellendi."
+  },
+  "toastDeleted": {
+    "message": "“$1” silindi."
+  },
+  "toastTextRequired": {
+    "message": "Metin boş olamaz."
+  },
+  "toastSaveFailed": {
+    "message": "Kaydedilemedi. Tarayıcı depolama alanı dolu olabilir."
+  },
+  "toastNoExport": {
+    "message": "Dışa aktarılacak blurb yok."
+  },
+  "toastJsonExported": {
+    "message": "JSON yedeği indirildi."
+  },
+  "toastTxtExported": {
+    "message": "TXT dosyası indirildi."
+  },
+  "toastFileTooLarge": {
+    "message": "Dosya çok büyük (en fazla 2 MB)."
+  },
+  "toastNoBlurbsInFile": {
+    "message": "Dosyada blurb bulunamadı."
+  },
+  "toastAllAlreadySaved": {
+    "message": "Yeni blurb bulunamadı; hepsi zaten kayıtlı."
+  },
+  "toastImported": {
+    "message": "İçe aktarılan blurb: $1."
+  },
+  "toastImportFailed": {
+    "message": "Dosya okunamadı."
+  },
+  "toastJsonParseFailed": {
+    "message": "JSON dosyası okunamadı."
+  },
+  "toastJsonNoList": {
+    "message": "Dosyada blurb listesi bulunamadı."
+  },
+  "toastSamplesExist": {
+    "message": "Örnek blurblar zaten ekli."
+  },
+  "toastSamplesAdded": {
+    "message": "Eklenen örnek blurb: $1."
+  },
+  "toastAllDeleted": {
+    "message": "Tüm blurblar silindi."
+  },
+  "sampleEmailLabel": {
+    "message": "E-posta adresim"
+  },
+  "sampleEmailText": {
+    "message": "ornek@eposta.com"
+  },
+  "samplePhoneLabel": {
+    "message": "Telefon"
+  },
+  "samplePhoneText": {
+    "message": "+90 5xx xxx xx xx"
+  },
+  "sampleSignatureLabel": {
+    "message": "Kısa imza"
+  },
+  "sampleSignatureText": {
+    "message": "Saygılarımla,\nAdınız Soyadınız"
+  }
+}

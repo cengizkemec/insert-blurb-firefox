@@ -1,0 +1,253 @@
+{
+  "extensionName": {
+    "message": "Insert Blurb (Firefox)",
+    "description": "Add-on name."
+  },
+  "extensionDescription": {
+    "message": "Insert pre-written text snippets into any text box from the right-click menu. All snippets stay in your browser.",
+    "description": "Add-on description."
+  },
+  "menuRoot": {
+    "message": "Insert blurb"
+  },
+  "menuEmpty": {
+    "message": "No blurbs yet"
+  },
+  "menuManage": {
+    "message": "Manage blurbs…"
+  },
+  "notifyTitle": {
+    "message": "Insert Blurb"
+  },
+  "errorNoTarget": {
+    "message": "Click a text field first, then try the right-click menu again."
+  },
+  "errorMaxLength": {
+    "message": "The text field is full or has reached its character limit."
+  },
+  "errorFailed": {
+    "message": "The text could not be inserted into this page. Reload the page and try again."
+  },
+  "optionsTitle": {
+    "message": "Insert Blurb — Manage Blurbs"
+  },
+  "eyebrow": {
+    "message": "Firefox extension"
+  },
+  "heroSub": {
+    "message": "Save the snippets you use often and insert them into any text box with one click from the right-click menu."
+  },
+  "heroBadge": {
+    "message": "Stored locally · Never sent to a server"
+  },
+  "newTitle": {
+    "message": "New blurb"
+  },
+  "newSubtitle": {
+    "message": "Add a short label and the text to insert."
+  },
+  "labelField": {
+    "message": "Label"
+  },
+  "optionalLabel": {
+    "message": "(optional)"
+  },
+  "labelPlaceholder": {
+    "message": "e.g. My email address"
+  },
+  "textField": {
+    "message": "Text"
+  },
+  "textPlaceholder": {
+    "message": "Text to insert from the context menu…"
+  },
+  "addButton": {
+    "message": "Add blurb"
+  },
+  "clearButton": {
+    "message": "Clear"
+  },
+  "newHint": {
+    "message": "If the label is empty, the menu shows the start of the text."
+  },
+  "listTitle": {
+    "message": "Your blurbs"
+  },
+  "blurbCountOne": {
+    "message": "1 blurb"
+  },
+  "blurbCountOther": {
+    "message": "$1 blurbs"
+  },
+  "importButton": {
+    "message": "Import"
+  },
+  "exportJsonButton": {
+    "message": "Download backup"
+  },
+  "exportTxtButton": {
+    "message": "Download TXT"
+  },
+  "exportJsonTitle": {
+    "message": "Full backup including labels"
+  },
+  "exportTxtTitle": {
+    "message": "Each blurb is downloaded on a single line"
+  },
+  "emptyTitle": {
+    "message": "No blurbs yet"
+  },
+  "emptyText": {
+    "message": "Add your first snippet and it will appear in the right-click menu instantly."
+  },
+  "emptyCreate": {
+    "message": "Create your first blurb"
+  },
+  "loadSamples": {
+    "message": "Load samples"
+  },
+  "dangerText": {
+    "message": "Permanently delete all blurbs."
+  },
+  "clearAllButton": {
+    "message": "Delete all"
+  },
+  "helpTitle": {
+    "message": "How to use it"
+  },
+  "helpStep1": {
+    "message": "Save your text above."
+  },
+  "helpStep2": {
+    "message": "Right-click a text box on any page."
+  },
+  "helpStep3": {
+    "message": "Choose the text from the “Insert blurb” menu."
+  },
+  "helpNote": {
+    "message": "Note: Some sites use custom editors (e.g. Facebook, Google Docs) where insertion may not work. Reload the page and try again."
+  },
+  "footerLeft": {
+    "message": "Insert Blurb · Firefox version"
+  },
+  "footerRight": {
+    "message": "All data stays in this browser."
+  },
+  "dialogTitle": {
+    "message": "Edit blurb"
+  },
+  "closeAria": {
+    "message": "Close"
+  },
+  "saveButton": {
+    "message": "Save"
+  },
+  "cancelButton": {
+    "message": "Cancel"
+  },
+  "editButton": {
+    "message": "Edit"
+  },
+  "deleteButton": {
+    "message": "Delete"
+  },
+  "confirmDeleteButton": {
+    "message": "Are you sure?"
+  },
+  "confirmClearAll": {
+    "message": "Are you sure?"
+  },
+  "moveUpTitle": {
+    "message": "Move up"
+  },
+  "moveDownTitle": {
+    "message": "Move down"
+  },
+  "unlabeled": {
+    "message": "Untitled"
+  },
+  "noLabelTitle": {
+    "message": "No label"
+  },
+  "characters": {
+    "message": "$1 characters"
+  },
+  "charCountTitle": {
+    "message": "Character count"
+  },
+  "genericBlurb": {
+    "message": "Blurb"
+  },
+  "toastAdded": {
+    "message": "Blurb added."
+  },
+  "toastUpdated": {
+    "message": "Blurb updated."
+  },
+  "toastDeleted": {
+    "message": "“$1” deleted."
+  },
+  "toastTextRequired": {
+    "message": "Text cannot be empty."
+  },
+  "toastSaveFailed": {
+    "message": "Could not save. Browser storage may be full."
+  },
+  "toastNoExport": {
+    "message": "There are no blurbs to export."
+  },
+  "toastJsonExported": {
+    "message": "JSON backup downloaded."
+  },
+  "toastTxtExported": {
+    "message": "TXT file downloaded."
+  },
+  "toastFileTooLarge": {
+    "message": "File is too large (max 2 MB)."
+  },
+  "toastNoBlurbsInFile": {
+    "message": "No blurbs found in the file."
+  },
+  "toastAllAlreadySaved": {
+    "message": "No new blurbs found; they are all already saved."
+  },
+  "toastImported": {
+    "message": "Blurbs imported: $1."
+  },
+  "toastImportFailed": {
+    "message": "Could not read the file."
+  },
+  "toastJsonParseFailed": {
+    "message": "Could not parse the JSON file."
+  },
+  "toastJsonNoList": {
+    "message": "No blurb list found in the file."
+  },
+  "toastSamplesExist": {
+    "message": "Sample blurbs are already added."
+  },
+  "toastSamplesAdded": {
+    "message": "Sample blurbs added: $1."
+  },
+  "toastAllDeleted": {
+    "message": "All blurbs deleted."
+  },
+  "sampleEmailLabel": {
+    "message": "My email address"
+  },
+  "sampleEmailText": {
+    "message": "example@email.com"
+  },
+  "samplePhoneLabel": {
+    "message": "Phone"
+  },
+  "samplePhoneText": {
+    "message": "+1 555 000 0000"
+  },
+  "sampleSignatureLabel": {
+    "message": "Short signature"
+  },
+  "sampleSignatureText": {
+    "message": "Best regards,\nYour Name"
+  }
+}

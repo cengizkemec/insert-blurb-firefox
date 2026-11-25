@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Insert Blurb — Manage Blurbs</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="hero-brand">
+        <img src="icons/icon-96.png" alt="" class="hero-logo" width="56" height="56">
+        <div>
+          <p class="eyebrow" data-i18n="eyebrow">Firefox extension</p>
+          <h1>Insert Blurb</h1>
+          <p class="hero-sub" data-i18n="heroSub">Save the snippets you use often and insert them into any text box with one click from the right-click menu.</p>
+        </div>
+      </div>
+      <div class="hero-badge" data-i18n="heroBadge">Stored locally · Never sent to a server</div>
+    </header>
+
+    <main class="layout">
+      <section class="card editor-card" aria-labelledby="new-title">
+        <div class="card-head">
+          <div>
+            <h2 id="new-title" data-i18n="newTitle">New blurb</h2>
+            <p class="muted" data-i18n="newSubtitle">Add a short label and the text to insert.</p>
+          </div>
+          <span class="char-count" id="char-count" data-i18n-title="charCountTitle" title="Character count">0</span>
+        </div>
+
+        <form id="new-form">
+          <label class="field">
+            <span><span data-i18n="labelField">Label</span> <em data-i18n="optionalLabel">(optional)</em></span>
+            <input id="new-label" type="text" maxlength="80" data-i18n-placeholder="labelPlaceholder" placeholder="e.g. My email address" autocomplete="off">
+          </label>
+
+          <label class="field">
+            <span data-i18n="textField">Text</span>
+            <textarea id="new-text" rows="5" required data-i18n-placeholder="textPlaceholder" placeholder="Text to insert from the context menu…"></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn primary" data-i18n="addButton">Add blurb</button>
+            <button type="button" class="btn ghost" id="clear-form" data-i18n="clearButton">Clear</button>
+          </div>
+
+          <p class="hint" data-i18n="newHint">If the label is empty, the menu shows the start of the text.</p>
+        </form>
+      </section>
+
+      <section class="card list-card" aria-labelledby="list-title">
+        <div class="card-head list-head">
+          <div>
+            <h2 id="list-title" data-i18n="listTitle">Your blurbs</h2>
+            <p class="muted" id="count-label">0 blurbs</p>
+          </div>
+          <div class="list-actions">
+            <button class="btn small ghost" id="import-btn" type="button" data-i18n="importButton">Import</button>
+            <button class="btn small ghost" id="export-json" type="button" data-i18n="exportJsonButton" data-i18n-title="exportJsonTitle" title="Full backup including labels">Download backup</button>
+            <button class="btn small ghost" id="export-txt" type="button" data-i18n="exportTxtButton" data-i18n-title="exportTxtTitle" title="Each blurb is downloaded on a single line">Download TXT</button>
+            <input type="file" id="import-file" accept=".json,.txt,application/json,text/plain" hidden>
+          </div>
+        </div>
+
+        <div class="empty" id="empty-state" hidden>
+          <div class="empty-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none">
+              <rect x="14" y="8" width="36" height="48" rx="7" fill="currentColor" opacity=".12"></rect>
+              <rect x="14" y="8" width="36" height="48" rx="7" stroke="currentColor" stroke-width="2.5"></rect>
+              <path d="M23 24h18M23 32h18M23 40h11" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"></path>
+              <circle cx="46" cy="46" r="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="2.5"></circle>
+              <path d="M46 41v10M41 46h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"></path>
+            </svg>
+          </div>
+          <h3 data-i18n="emptyTitle">No blurbs yet</h3>
+          <p data-i18n="emptyText">Add your first snippet and it will appear in the right-click menu instantly.</p>
+          <div class="empty-actions">
+            <button class="btn primary" id="empty-create" type="button" data-i18n="emptyCreate">Create your first blurb</button>
+            <button class="btn ghost" id="load-samples" type="button" data-i18n="loadSamples">Load samples</button>
+          </div>
+        </div>
+
+        <ul class="blurb-list" id="blurb-list"></ul>
+
+        <div class="danger-row" id="danger-row" hidden>
+          <span class="muted" data-i18n="dangerText">Permanently delete all blurbs.</span>
+          <button class="btn small danger" id="clear-all" type="button" data-i18n="clearAllButton">Delete all</button>
+        </div>
+      </section>
+    </main>
+
+    <section class="card help-card">
+      <h2 data-i18n="helpTitle">How to use it</h2>
+      <ol class="steps">
+        <li><span>1</span> <span data-i18n="helpStep1">Save your text above.</span></li>
+        <li><span>2</span> <span data-i18n="helpStep2">Right-click a text box on any page.</span></li>
+        <li><span>3</span> <span data-i18n="helpStep3">Choose the text from the “Insert blurb” menu.</span></li>
+      </ol>
+      <p class="note" data-i18n="helpNote">Note: Some sites use custom editors (e.g. Facebook, Google Docs) where insertion may not work. Reload the page and try again.</p>
+    </section>
+
+    <footer class="page-footer">
+      <span data-i18n="footerLeft">Insert Blurb · Firefox version</span>
+      <span data-i18n="footerRight">All data stays in this browser.</span>
+    </footer>
+  </div>
+
+  <dialog id="edit-dialog" class="dialog">
+    <form id="edit-form">
+      <div class="dialog-head">
+        <h2 data-i18n="dialogTitle">Edit blurb</h2>
+        <button type="button" class="icon-btn" id="edit-close" data-i18n-aria-label="closeAria" aria-label="Close">×</button>
+      </div>
+
+      <label class="field">
+        <span><span data-i18n="labelField">Label</span> <em data-i18n="optionalLabel">(optional)</em></span>
+        <input id="edit-label" type="text" maxlength="80" data-i18n-placeholder="labelPlaceholder" placeholder="e.g. My email address" autocomplete="off">
+      </label>
+
+      <label class="field">
+        <span data-i18n="textField">Text</span>
+        <textarea id="edit-text" rows="6" required data-i18n-placeholder="textPlaceholder" placeholder="Text to insert from the context menu…"></textarea>
+      </label>
+
+      <div class="form-actions">
+        <button type="submit" class="btn primary" id="edit-save" data-i18n="saveButton">Save</button>
+        <button type="button" class="btn ghost" id="edit-cancel" data-i18n="cancelButton">Cancel</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="options.js"></script>
+</body>
+</html>
